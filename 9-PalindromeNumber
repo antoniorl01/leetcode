@@ -1,0 +1,13 @@
+func isPalindrome(x int) bool {
+	y := strconv.Itoa(x)
+	idx2 := len(y) - 1
+
+	for idx := 0; idx < len(y); idx++ {
+		if y[idx] != y[idx2] {
+			return false
+		}
+		idx2--
+	}
+
+	return true
+}
